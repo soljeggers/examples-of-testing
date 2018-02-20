@@ -20,7 +20,7 @@ class PartridgeSpec extends WordSpec with MustMatchers {
       Partridge.partridge(List("PearTree", "Toblerone")) mustEqual "Mine's a Pint!!"
     }
     "return' Mine's a Pint!!!!!!' If six terms match" in {
-      Partridge.partridge(List("PearTree", "Chat", "Partridge","Dan", "Toblerone", "Lynn"))
+      Partridge.partridge(List("PearTree", "Chat", "Partridge","Dan", "Toblerone", "Lynn")) mustEqual "Mine's a Pint!!!!!!"
     }
   }
 }
